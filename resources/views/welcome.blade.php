@@ -20,16 +20,19 @@
         @endif
     </head>
     <div class="container">
-    <body class="bg-[#FDFDFC] dark:bg-[#0a0a0a] text-[#1b1b18] flex p-6 lg:p-8 items-center lg:justify-center min-h-screen flex-col">
-        
-    <div class="container">
-        <h1>Test des boutons</h1>
-        <p>Clique sur un bouton pour tester :</p>
+    <body style="background-color: #FDFDFC; display: flex; justify-content: center; align-items: center; height: 100vh; flex-direction: column;">
 
-        <button class="btn-ajouter" onclick="alert('Ajouter !')">Ajouter</button>
-        <button class="btn-modifier" onclick="alert('Modifier !')">Modifier</button>
-        <button class="btn-supprimer" onclick="alert('Supprimer !')">Supprimer</button>
-    </div>
+    <h1>Test boutons</h1>
+
+    <button style="background-color: green; color: white; padding: 10px 20px; margin: 5px; border: none; border-radius: 5px;"
+            onclick="alert('Ajouter !')">Ajouter</button>
+
+    <button style="background-color: orange; color: white; padding: 10px 20px; margin: 5px; border: none; border-radius: 5px;"
+            onclick="alert('Modifier !')">Modifier</button>
+
+    <button style="background-color: red; color: white; padding: 10px 20px; margin: 5px; border: none; border-radius: 5px;"
+            onclick="alert('Supprimer !')">Supprimer</button>
+
         <header class="w-full lg:max-w-4xl max-w-[335px] text-sm mb-6 not-has-[nav]:hidden">
             @if (Route::has('login'))
                 <nav class="flex items-center justify-end gap-4">
